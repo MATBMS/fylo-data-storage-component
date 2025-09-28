@@ -1,0 +1,19 @@
+#card {
+  width: 350px;
+  height: 201px;
+  background-color: red;
+}
+
+/* SMALL TABLET */
+@media (max-width: 500px) {
+  #card {
+    width: calc((350 / 500) * 100vw);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {
+  #card {
+    width: calc((326 / 375) * 100vw);
+  }
+}

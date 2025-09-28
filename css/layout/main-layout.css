@@ -1,0 +1,38 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-color: var(--colors-blue-950, #0C122C);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--spacing-400, 32px);
+}
+
+/* DESKTOP */
+
+@media (max-width: 1440px) {
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-200, 16px);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {}
+
+/* MOBILE */
+
+@media (max-width: 375px) {}

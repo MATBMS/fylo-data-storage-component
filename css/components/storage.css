@@ -1,0 +1,19 @@
+#storage {
+  width: 540px;
+  height: 154px;
+  background-color: blue;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  #storage {
+    width: calc((540 / 768) * 100vw);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {
+  #storage {
+    width: calc((326 / 375) * 100vw);
+  }
+}
