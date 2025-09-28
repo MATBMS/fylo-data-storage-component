@@ -1,0 +1,68 @@
+# Design files (please do not remove 🙂)
+.sketch
+.fig
+
+# Avoid accidental XD upload
+.xd
+
+# Dependencies
+/node_modules
+node_modules/
+/.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+yarn.debug.log
+yarn.error.log
+npm-debug.log
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Testing
+/coverage
+
+# Production
+/build
+build/
+/dist
+dist/
+/.next
+/out
+
+# IDEs and editors
+/.idea
+.idea/
+/.vscode
+.vscode/
+*.swp
+*.swo
+
+# Miscellaneous
+*.log
+*.pem
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.old
+*.orig
+*.patch
+*.rej
+.diff
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+._
+.prettierignore
+
+# Frontend Mentor instructions
+design/
+figma/
+instructions/
