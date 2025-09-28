@@ -1,0 +1,61 @@
+/* import font */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+/* heading */
+.text-preset-1 {
+  font-family: 'Raleway';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: justify;
+  color: #133041;
+}
+
+/* Text Preset 2 (Bold) */
+.text-preset-2-bold {
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  color: #133041;
+  text-align: justify;
+}
+
+/* Text Preset 2 (Regular) */
+.text-preset-2-regular {
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  color: #133041;
+  text-align: justify;
+}
+
+/* Text Preset 3 (ExtraBold) */
+.text-preset-3-extra-bold {
+  font-family: 'Raleway';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 115%;
+  color: #133041;
+  text-align: justify;
+}
+
+/* Text Preset 3 (Bold) */
+.text-preset-3-bold {
+  font-family: 'Raleway';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 1px;
+  color: #133041;
+  text-align: justify;
+}
