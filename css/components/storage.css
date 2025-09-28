@@ -39,6 +39,7 @@
   border: 0;
   border-radius: 10px;
   height: 14px;
+  padding-left: 3px;
   box-shadow: none;
 }
 
@@ -58,7 +59,7 @@
   height: 14px;
 }
 
-/* CIRCLE IN BAR */
+/* KNOP */
 /* Make the container the positioning context and shrink to meter width */
 .storage-bar {
   position: relative;
@@ -75,12 +76,29 @@
   border-radius: 50%;
   background: #fff;
   border: 2px solid #FF4A95;
-  box-shadow: 0 0 0 2px rgba(255, 74, 149, 0.25);
-  top: 50%;
-  left: 81.5%;
-  /* 815 / 1000 = 81.5%. Replace with your current value */
+  /* box-shadow: 0 0 0 2px rgba(255, 74, 149, 0.25); */
+  top: 24%;
+  left: 80%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+/* BAR LABELS */
+/* Labels under the bar */
+.storage-scale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* matches the meter width because .storage-bar is shrink-wrapped */
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+.storage-scale-start,
+.storage-scale-end {
+  user-select: none;
+  white-space: nowrap;
 }
 
 /* TABLET */

@@ -46,7 +46,8 @@
   font-style: normal;
   font-weight: 800;
   line-height: 115%;
-  color: #133041;
+  /* color: #133041; */
+  color: var(--colors-blue-200, #DBD9FF);
   text-align: justify;
 }
 
