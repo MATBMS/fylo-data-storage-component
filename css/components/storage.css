@@ -1,7 +1,86 @@
 #storage {
+  /* layout */
   width: 540px;
   height: 154px;
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--spacing-0, 0) var(--spacing-400, 32px);
+  gap: var(--spacing-100, 8px);
+  /* style */
+  border-radius: 10px;
+  background: var(--colors-blue-850, #1E2D69);
+  box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
+}
+
+/* BAR */
+.storage-meter {
+  /* reset */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  display: block;
+  overflow: hidden;
+  /* layout */
+  width: 463px;
+  height: 20px;
+  /* style */
+  border-radius: 10px;
+  background: var(--colors-blue-900, #0F1B3D);
+  position: relative;
+}
+
+/* WebKit (Chrome/Safari/Edge) */
+.storage-meter::-webkit-meter-bar {
+  background: var(--colors-blue-900, #0F1B3D);
+  /* track */
+  border: 0;
+  border-radius: 10px;
+  height: 14px;
+  box-shadow: none;
+}
+
+.storage-meter::-webkit-meter-optimum-value,
+.storage-meter::-webkit-meter-suboptimum-value,
+.storage-meter::-webkit-meter-even-less-good-value {
+  background: var(--colors-gradient-2, linear-gradient(90deg, #FFA197 0%, #FF4A95 100%));
+  /* fill */
+  border-radius: inherit;
+}
+
+/* Firefox */
+.storage-meter::-moz-meter-bar {
+  background: var(--colors-gradient-2, linear-gradient(90deg, #FFA197 0%, #FF4A95 100%));
+  /* fill */
+  border-radius: 10px;
+  height: 14px;
+}
+
+/* CIRCLE IN BAR */
+/* Make the container the positioning context and shrink to meter width */
+.storage-bar {
+  position: relative;
+  display: inline-block;
+  /* shrink-wrap to the meter's width */
+}
+
+/* The knob stays on the bar container */
+.storage-bar::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #FF4A95;
+  box-shadow: 0 0 0 2px rgba(255, 74, 149, 0.25);
+  top: 50%;
+  left: 81.5%;
+  /* 815 / 1000 = 81.5%. Replace with your current value */
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 /* TABLET */
