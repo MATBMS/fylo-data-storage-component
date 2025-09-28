@@ -21,17 +21,17 @@ main {
 
 /* DESKTOP */
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) {}
+
+/* TABLET */
+
+@media (max-width: 768px) {
   main {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-200, 16px);
   }
 }
-
-/* TABLET */
-
-@media (max-width: 768px) {}
 
 /* MOBILE */
 

@@ -1,7 +1,46 @@
+/* CARD */
 #card {
+  /* layout */
+  display: flex;
   width: 350px;
   height: 201px;
-  background-color: red;
+  padding: var(--spacing-500, 40px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-400, 32px);
+  /* style */
+  border-radius: 10px 100px 10px 10px;
+  background: var(--colors-blue-850, #1E2D69);
+  box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
+}
+
+/* LOGO */
+.logo {
+  width: 135px;
+  height: 40px;
+}
+
+/* ICONS */
+.card-icons-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+}
+
+.card-icon-container {
+  /* layout */
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: var(--spacing-0, 0);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-0, 0);
+  /* style */
+  border-radius: 10px;
+  background: var(--colors-blue-950, #0C122C);
 }
 
 /* SMALL TABLET */
