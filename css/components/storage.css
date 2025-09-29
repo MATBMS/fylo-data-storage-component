@@ -12,6 +12,8 @@
   border-radius: 10px;
   background: var(--colors-blue-850, #1E2D69);
   box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
+  /* position */
+  position: relative;
 }
 
 /* BAR */
@@ -54,7 +56,6 @@
 /* Firefox */
 .storage-meter::-moz-meter-bar {
   background: var(--colors-gradient-2, linear-gradient(90deg, #FFA197 0%, #FF4A95 100%));
-  /* fill */
   border-radius: 10px;
   height: 14px;
 }
@@ -76,7 +77,6 @@
   border-radius: 50%;
   background: #fff;
   border: 2px solid #FF4A95;
-  /* box-shadow: 0 0 0 2px rgba(255, 74, 149, 0.25); */
   top: 24%;
   left: 80%;
   transform: translate(-50%, -50%);
@@ -90,15 +90,51 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* matches the meter width because .storage-bar is shrink-wrapped */
   margin-top: 8px;
-  opacity: 0.85;
 }
 
+/* Prevent text selection and wrapping for scale labels */
 .storage-scale-start,
 .storage-scale-end {
   user-select: none;
+  /* Users cannot select the label text */
   white-space: nowrap;
+  /* Prevent the label text from wrapping to a new line */
+}
+
+/* STORAGE BUBBLE */
+.storage-bubble {
+  /* layout */
+  display: flex;
+  height: 72px;
+  padding: 16px 24.5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: stretch;
+  /* design */
+  border-radius: 10px 10px 0 10px;
+  background: var(--colors-white, #FFF);
+  box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
+  /* position */
+  position: absolute;
+  top: calc(-72px / 2);
+  right: 50px;
+}
+
+.storage-bubble::after {
+  /* layout */
+  content: "";
+  width: 22px;
+  height: 22px;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  /* style */
+  background: #fff;
+  /* position */
+  position: absolute;
+  right: 0;
+  bottom: -22px;
 }
 
 /* TABLET */

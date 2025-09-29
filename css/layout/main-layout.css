@@ -3,8 +3,8 @@ body {
   height: 100vh;
   background-image: url(../../images/bg-desktop.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100% auto;
+  background-position: left bottom;
+  background-size: 100vw 50vh;
   background-color: var(--colors-blue-950, #0C122C);
   display: flex;
   flex-direction: row;

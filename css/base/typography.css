@@ -59,6 +59,8 @@
   font-weight: 700;
   line-height: 115%;
   letter-spacing: 1px;
-  color: #133041;
+  text-transform: uppercase;
+  /* color: #133041; */
+  color: #858895;
   text-align: justify;
 }
