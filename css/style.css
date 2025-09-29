@@ -15,12 +15,4 @@
 /* ============================= */
 /* ==       LAYOUT            == */
 /* ============================= */
-@import url(./layout/grid.css);
 @import url(./layout/main-layout.css);
-
-/* ============================= */
-/* ==       SECTIONS          == */
-/* ============================= */
-@import url(./sections/home.css);
-@import url(./sections/about.css);
-@import url(./sections/contact.css);
