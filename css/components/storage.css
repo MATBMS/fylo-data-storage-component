@@ -135,6 +135,20 @@
   bottom: -22px;
 }
 
+/* SMALL DESKTOP */
+@media (max-width: 950px) {
+  .storage-bubble {
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 10px;
+  }
+
+  .storage-bubble::after {
+    display: none;
+  }
+}
+
 /* TABLET */
 @media (max-width: 768px) {
   #storage {
