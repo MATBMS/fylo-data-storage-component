@@ -49,6 +49,7 @@
     if (bubbleValue)
       bubbleValue.textContent = String(Math.max(0, Math.round(max - end)));
     storageBubble.classList.remove("is-hidden");
+    storageBubble.classList.add("fade-in");
     storageBubble.setAttribute("aria-hidden", "false");
     return;
   }
@@ -78,6 +79,7 @@
       if (bubbleValue)
         bubbleValue.textContent = String(Math.max(0, Math.round(max - end)));
       storageBubble.classList.remove("is-hidden");
+      storageBubble.classList.add("fade-in");
       storageBubble.setAttribute("aria-hidden", "false");
     }
   }

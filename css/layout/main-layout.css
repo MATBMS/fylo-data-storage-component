@@ -26,6 +26,10 @@ main {
 /* SMALL DESKTOP */
 
 @media (max-width: 950px) {
+  body {
+    background-size: 100vw 40vh;
+  }
+
   main {
     flex-direction: column;
     align-items: flex-start;
@@ -39,4 +43,9 @@ main {
 
 /* MOBILE */
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  body {
+    background-position: right top;
+    background-size: 400vw 100vh;
+  }
+}
