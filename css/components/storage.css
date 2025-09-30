@@ -76,7 +76,7 @@
   background: #fff;
   border: 2px solid #FF4A95;
   top: 24%;
-  left: 80%;
+  left: var(--knob-left, 0%);
   transform: translate(-50%, -50%);
   z-index: 2;
 }
@@ -119,6 +119,11 @@
   position: absolute;
   top: calc(-72px / 2);
   right: 34px;
+}
+
+/* Hidden state for the bubble while animating */
+.storage-bubble.is-hidden {
+  display: none;
 }
 
 .storage-bubble::after {
