@@ -23,7 +23,7 @@
   font-weight: 700;
   line-height: 115%;
   /* color: #133041; */
-  color: var(--colors-blue-200, #DBD9FF);
+  color: var(--color-blue-200);
   text-align: justify;
 }
 
@@ -35,7 +35,7 @@
   font-weight: 400;
   line-height: 115%;
   /* color: #133041; */
-  color: var(--colors-blue-200, #DBD9FF);
+  color: var(--color-blue-200);
   text-align: justify;
 }
 
@@ -47,7 +47,7 @@
   font-weight: 800;
   line-height: 115%;
   /* color: #133041; */
-  color: var(--colors-blue-200, #DBD9FF);
+  color: var(--color-blue-200);
   text-align: justify;
 }
 

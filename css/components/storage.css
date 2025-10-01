@@ -6,11 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: var(--spacing-500, 40px) var(--spacing-400, 32px);
-  gap: var(--spacing-100, 8px);
+  padding: var(--spacing-500) var(--spacing-400);
+  gap: var(--spacing-100);
   /* style */
   border-radius: 10px;
-  background: var(--colors-blue-850, #1E2D69);
+  background: var(--color-blue-850);
   box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
   /* position */
   position: relative;
@@ -36,13 +36,13 @@
   height: 20px;
   /* style */
   border-radius: 10px;
-  background: var(--colors-blue-900, #0F1B3D);
+  background: var(--color-blue-900);
   position: relative;
 }
 
 /* WebKit (Chrome/Safari/Edge) */
 .storage-meter::-webkit-meter-bar {
-  background: var(--colors-blue-900, #0F1B3D);
+  background: var(--color-blue-900);
   /* track */
   border: 0;
   border-radius: 10px;
@@ -54,14 +54,14 @@
 .storage-meter::-webkit-meter-optimum-value,
 .storage-meter::-webkit-meter-suboptimum-value,
 .storage-meter::-webkit-meter-even-less-good-value {
-  background: var(--colors-gradient-2, linear-gradient(90deg, #FFA197 0%, #FF4A95 100%));
+  background: var(--gradient-2);
   /* fill */
   border-radius: inherit;
 }
 
 /* Firefox */
 .storage-meter::-moz-meter-bar {
-  background: var(--colors-gradient-2, linear-gradient(90deg, #FFA197 0%, #FF4A95 100%));
+  background: var(--gradient-2);
   border-radius: 10px;
   height: 14px;
 }
@@ -109,11 +109,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-100, 8px);
+  gap: var(--spacing-100);
   align-self: stretch;
   /* design */
   border-radius: 10px 10px 0 10px;
-  background: var(--colors-white, #FFF);
+  background: var(--color-white);
   box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
   /* position */
   position: absolute;

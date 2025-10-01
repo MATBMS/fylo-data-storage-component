@@ -4,14 +4,14 @@
   display: flex;
   width: 350px;
   height: 201px;
-  padding: var(--spacing-500, 40px);
+  padding: var(--spacing-500);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: var(--spacing-400, 32px);
+  gap: var(--spacing-400);
   /* style */
   border-radius: 10px 100px 10px 10px;
-  background: var(--colors-blue-850, #1E2D69);
+  background: var(--color-blue-850);
   box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
 }
 
@@ -25,7 +25,7 @@
 .card-icons-container {
   display: flex;
   align-items: center;
-  gap: var(--spacing-200, 16px);
+  gap: var(--spacing-200);
   align-self: stretch;
 }
 
@@ -34,13 +34,13 @@
   display: flex;
   width: 48px;
   height: 48px;
-  padding: var(--spacing-0, 0);
+  padding: var(--spacing-0);
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-0, 0);
+  gap: var(--spacing-0);
   /* style */
   border-radius: 10px;
-  background: var(--colors-blue-950, #0C122C);
+  background: var(--color-blue-950);
 }
 
 /* SMALL TABLET */
